@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JavaScript</title>
+        <!-- Inkluderar JavaScript-biblioteket jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- Inkluderar vårt egna JavaScript-dokument -->
+        <script src="script.js" defer></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <h1>Min Webbsida</h1>
+                <div class="p-container">
+                    <p>Inlämningsuppgift 2</p>
+                    <p>Goran Slavnic</p>
+                </div>
+            </header>
+
+            <nav class="nav">
+                <a href="#" id="menu-btn" class="no-link-style mobile-only">MENY</a>
+                
+                <div id="menu">
+                    <a href="index.html"
+                        class="no-link-style">START</a>
+                    <a href="index2.html"
+                        class="no-link-style">OM JAVASCRIPT</a>
+                    <a href="#contact"
+                        class="no-link-style">KONTAKT</a>
+                </div>
+            </nav>
+
+            <main class="main">
+                <section class="section1">
+                    <button id="change-color">Ändra textfärg</button>
+                    <h2>Om hemsidan</h2>
+                    <p>Syftet med den här hemsidan är att ge en introduktion till JavaScript och att visa hur man inom kursen <strong>Introduktion till webbutveckling</strong> kan arbeta med språket och göra sidan interaktiv.
+                       I programmet <strong>Informationsarkitekt</strong> behöver man lära sig grunderna till JavaScript för att det utgör en viktig del av webbutveckling och skapande av webbsidor.
+                    </p>
+
+                    <p>Mitt namn är Goran och det är jag som har skapat den här webbsidan. För mig är det här en inlämningsuppgift där jag behöver visa mina förmågor inom <strong>HTML</strong>, <strong>CSS</strong> och <strong>JavaScript</strong>.
+                       Webbsidan behöver även vara responsiv vilket innebär att den också ska fungera på skärmar av olika storlekar. Jag har inkluderat en ruta där man kan ändra textfärgen på sidan, men även några bilder som förstoras när man klickar på dem.
+                       Det här är en del av JavaScript, som du kan läsa mer om på sidan <strong>"Om JavaScript"</strong>.
+                    </p>
+                    
+                    <h2>Bilder</h2>
+                    <div class="images">
+                        <img src="football.jpg" alt="Två fotbollspelare" class="big-image">
+                        <img src="sweden-1994.jpg" alt="Sveriges landslag 1994" class="big-image">
+                        <img src="usainbolt.jpg" alt="Usain Bolt springer från motståndarna" class="big-image">
+                    </div>
+                </section>
+                
+                <form class="form">
+                    <fieldset>
+                        <legend>Följ mig!</legend>
+                        
+                        <label for="name">Namn:</label>
+                        <input type="text" id="name" name="name" placeholder="Skriv ditt namn" required>
+                        
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Skriv din email" required>
+                        
+                        <input type="submit" value="Skicka">
+                    </fieldset>
+                </form>
+            </main>
+
+            <footer class="footer" id="contact">
+                <p>För frågor, vänligen kontakta mig via e-post: <a href="mailto:slavnicgoran@hotmail.com" class="no-link-style">slavnicgoran@hotmail.com</a></p>
+                <p>Senast uppdaterad 2024-10-13</p>
+            </footer> 
+        </div>
+    </body>
+</html>

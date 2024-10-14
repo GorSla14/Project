@@ -1,0 +1,297 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    background-color: whitesmoke;
+    font-family: 'domine';
+    border: 2px solid black;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#febf04+8,febf04+8,ffd65e+68,ffd65e+68 */
+    background: linear-gradient(to bottom,  #febf04 8%,#febf04 8%,#ffd65e 68%,#ffd65e 68%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    border-bottom: 2px solid black;
+    font-size: x-large;
+}
+
+.header h1 {
+    padding-left: 20px;
+}
+
+.p-container {
+    align-content: center;
+}
+
+.p-container > p {
+    margin: 0;
+}
+
+.nav {
+    height: fit-content;
+    padding: 5px;
+    background-color: aliceblue;
+    border-bottom: 2px solid black;
+}
+
+#menu {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 40px;
+    gap: 80px;
+    list-style-type: none;
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+#menu {
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+#menu a:hover {
+    background-color: black;
+    color: white;
+    transition: all 0.5s;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    margin: 10px 0px;
+    padding-left: 30px;
+}
+
+main p {
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: aliceblue;
+}
+
+.section2 a {
+    color: red;
+}
+
+.images {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    
+}
+
+.images img {
+    width: 40%;
+    border: 2px solid black;
+}
+
+.big-image {
+    cursor: pointer;
+}
+
+fieldset {
+    width: 300px;
+    background-color: aliceblue;
+    border: 2px solid black;
+    border-radius: 8px;
+    margin-right: 20px;
+    padding: 30px;
+    text-align: left;
+}
+
+legend {
+    background-color: aliceblue;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 5px 5px;
+    text-align: left;
+}
+
+.form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form input[type="text"], .form input[type="email"] {
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.footer {
+    height: 100px;
+    border-top: 2px solid black;
+    color: white;
+    padding-left: 20px;
+    text-align: center;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#45484d+0,000000+100;Black+3D+%231 */
+    background: linear-gradient(to bottom,  #45484d 0%,#000000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.no-link-style {
+    color: inherit;
+    text-decoration: none;
+}
+
+.no-link-style:hover {
+    cursor: pointer;
+}
+
+.factbox {
+    width: 30%;
+    height: fit-content;
+    border: 2px solid #000;
+    border-radius: 8px;
+    margin: 20px;
+    padding: 20px;
+    background-color: aliceblue;
+    margin-top: 20px;
+}
+
+.factbox li {
+    padding: 5px;
+}
+
+button {
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: aliceblue;
+    padding: 5px 10px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+section {
+    width: 50%;
+}
+
+.mobile-only {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    
+    .header {
+        flex-direction: column;
+        text-align: center;
+        font-size: small;
+        padding: 0;
+    }
+
+    .main {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .section1 {
+        width: 80%;
+        align-self: center;
+    }
+
+    .section2 {
+        width: 80%;
+        align-self: center;
+    }
+
+    .images {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        
+    }
+
+    #menu {
+        flex-direction: column;
+        text-align: center;
+        margin: 5px 0px;
+        gap: 10px;
+    }
+    
+    .mobile-only {
+        display: block;
+    }
+
+    #menu-btn {
+        margin: 5px 20px;
+        padding: 5px 10px;
+        text-align: center;
+        background-color: aliceblue;
+        border: 1px solid black;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    #menu-btn:hover + #menu {
+        height: 90px;
+    }
+    
+    #menu {
+        height: 0px;
+        overflow: hidden;
+        transition: 0.5s all;
+    }
+
+    .form {
+        margin-top: 20px;
+        align-self: center;
+    }
+
+    .factbox {
+        width: auto;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 870px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+        font-size: medium;
+        padding: 0;
+    }
+
+    #menu {
+        margin: 0px;
+        
+    }
+
+    main {
+        flex-direction: column;
+    }
+    
+    .section1 {
+        width: 80%;
+        align-self: center; 
+    }
+
+    .section2 {
+        width: 80%;
+        align-self: center;
+    }
+
+    .form {
+        margin-top: 20px;
+        align-self: center;
+    }
+
+    .factbox {
+        width: 80%;
+        align-self: center;
+    }
+
+    .images {
+        flex-wrap: wrap;
+    }
+    
+}
